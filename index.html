@@ -1,0 +1,1515 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>IC Indigenous Solutions Inc. | Indigenous Governance, Housing & Nation-Building Consultants Canada</title>
+<meta name="description" content="ICISI is an Indigenous-led consulting firm delivering governance, housing, economic development, health services, and capacity building solutions for First Nations, Chiefs, and Councils across Canada.">
+<meta name="keywords" content="Indigenous consulting Canada, First Nations governance, Indigenous housing CMHC, Nation-building consultants, First Nations economic development, Indigenous capacity building, ISC reporting, FNFA, Indigenous health consulting, Chiefs and Councils support, First Nations funding proposals, Manitoba Indigenous consultants, ICISI, IC Indigenous Solutions">
+<meta property="og:title" content="IC Indigenous Solutions Inc. | Indigenous-Led. Nation-Building. Delivered.">
+<meta property="og:description" content="Integrated, Indigenous-led solutions in governance, housing, economic development, health, and capacity building for First Nations communities across Canada.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://icindigenoussolutions.ca">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://icindigenoussolutions.ca">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "name": "IC Indigenous Solutions Inc.",
+  "alternateName": "ICISI",
+  "url": "https://icindigenoussolutions.ca",
+  "description": "Indigenous-led consulting firm delivering integrated solutions in governance, housing, economic development, health services, and capacity building for First Nations, Chiefs, and Councils across Canada.",
+  "areaServed": "Canada",
+  "serviceType": ["Indigenous Governance Consulting", "First Nations Housing", "Economic Development", "Capacity Building", "Health Services Consulting", "Funding and Proposals"],
+  "employee": [
+    {"@type": "Person", "name": "Drayton Mendrun", "jobTitle": "President and Senior Consultant"},
+    {"@type": "Person", "name": "Doug Mercer", "jobTitle": "Vice-President"},
+    {"@type": "Person", "name": "Vincent Tacan", "jobTitle": "Senior Governance Consultant"},
+    {"@type": "Person", "name": "Nathan Hall", "jobTitle": "Senior Housing Consultant"},
+    {"@type": "Person", "name": "Janine Marion", "jobTitle": "Senior Consultant"},
+    {"@type": "Person", "name": "Jacques Marion", "jobTitle": "Founder and Advisor"},
+    {"@type": "Person", "name": "Robin Dodd", "jobTitle": "Senior Income Assistance Specialist"},
+    {"@type": "Person", "name": "Cara Leslie", "jobTitle": "HR Consultant"},
+    {"@type": "Person", "name": "Sara Rommelaere", "jobTitle": "Principal Health Consultant"}
+  ],
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "email": "drayton@icindigenoussolutions.ca",
+    "telephone": "+1-204-451-3228",
+    "contactType": "customer service"
+  }
+}
+</script>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+/* ═══════════════════════════════════════════════════════════
+   DESIGN TOKENS
+   Accessibility-first: all body text meets WCAG AA (4.5:1).
+   Minimum font size 16px for body, 13px for labels only.
+═══════════════════════════════════════════════════════════ */
+:root {
+  /* Backgrounds */
+  --bg:         #10151e;
+  --bg-panel:   #171f2e;
+  --bg-raise:   #1e2840;
+
+  /* Borders */
+  --border:     rgba(255,255,255,0.08);
+  --border-gold:rgba(212,168,58,0.38);
+
+  /* Text — contrast-verified */
+  --t-heading:  #eef2f8;   /* 14.5:1 on --bg */
+  --t-body:     #c4d0e0;   /* 8.2:1 on --bg  */
+  --t-secondary:#8fa5bf;   /* 4.7:1 on --bg  */
+  --t-muted:    #637a96;   /* 3.2:1 on --bg  */
+
+  /* Accents */
+  --gold:       #d4a83a;
+  --gold-lt:    #e8c05a;
+  --gold-dim:   rgba(212,168,58,0.12);
+  --ember:      #e07040;
+
+  /* Layout */
+  --ph: 5rem;   /* page horizontal padding */
+  --sv: 5.5rem; /* section vertical padding */
+}
+
+*, *::before, *::after { margin:0; padding:0; box-sizing:border-box; }
+html { scroll-behavior: smooth; }
+
+body {
+  background: var(--bg);
+  color: var(--t-body);
+  font-family: 'DM Sans', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.7;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+
+/* ── GLOBAL TYPE ─────────────────────────────────────── */
+.eyebrow {
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--ember);
+  display: block;
+  margin-bottom: 0.85rem;
+}
+
+.section-title {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(2rem, 3.5vw, 3rem);
+  font-weight: 700;
+  line-height: 1.15;
+  color: var(--t-heading);
+  margin-bottom: 1.2rem;
+}
+.section-title em { font-style: italic; color: var(--gold); }
+
+.body-text {
+  font-size: 1.05rem;
+  line-height: 1.85;
+  color: var(--t-body);
+}
+.body-text + .body-text { margin-top: 1rem; }
+
+/* ── NAV ─────────────────────────────────────────────── */
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.75rem var(--ph);
+  border-bottom: 1px solid var(--border);
+  position: relative; z-index: 10;
+  animation: fadeDown 0.7s ease both;
+}
+
+.nav-brand { display: flex; flex-direction: column; gap: 0.15rem; }
+
+.nav-logo {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--t-heading);
+  letter-spacing: 0.02em;
+}
+
+.nav-url {
+  font-size: 0.78rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--t-secondary);
+}
+
+.nav-badge {
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--gold);
+  border: 1px solid var(--border-gold);
+  padding: 0.5rem 1.15rem;
+}
+
+/* ── HERO ─────────────────────────────────────────────── */
+.hero {
+  min-height: 100vh;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero::before {
+  content: '';
+  position: absolute; inset: 0;
+  background:
+    radial-gradient(ellipse 60% 55% at 85% 20%, rgba(212,168,58,0.08) 0%, transparent 65%),
+    radial-gradient(ellipse 50% 70% at 5% 80%, rgba(30,40,64,0.85) 0%, transparent 60%);
+  pointer-events: none;
+}
+
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 4rem var(--ph) 2rem;
+  position: relative; z-index: 2;
+  max-width: 860px;
+}
+
+.hero-headline-eyebrow {
+  font-size: 0.82rem;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 1.5rem;
+  animation: fadeUp 0.7s 0.15s ease both;
+}
+
+.hero h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(3.5rem, 7vw, 6.5rem);
+  font-weight: 900;
+  line-height: 1.0;
+  color: var(--t-heading);
+  margin-bottom: 1.75rem;
+  animation: fadeUp 0.7s 0.3s ease both;
+}
+.hero h1 em { font-style: italic; color: var(--gold); }
+
+.hero-sub {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  color: var(--t-body);
+  max-width: 56ch;
+  margin-bottom: 2.5rem;
+  animation: fadeUp 0.7s 0.45s ease both;
+}
+
+.hero-actions {
+  display: flex;
+  gap: 1.25rem;
+  align-items: center;
+  flex-wrap: wrap;
+  animation: fadeUp 0.7s 0.6s ease both;
+}
+
+.btn {
+  display: inline-block;
+  font-size: 0.88rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 0.9rem 2rem;
+  transition: background 0.22s, color 0.22s, transform 0.18s;
+}
+.btn-solid { background: var(--gold); color: #111; }
+.btn-solid:hover { background: var(--gold-lt); transform: translateY(-2px); }
+.btn-outline {
+  color: var(--t-body);
+  border-bottom: 1px solid rgba(255,255,255,0.3);
+  padding: 0.9rem 0 2px;
+}
+.btn-outline:hover { color: var(--gold); border-color: var(--gold); }
+
+/* ── STATS BAR ───────────────────────────────────────── */
+.stats-bar {
+  padding: 2.25rem var(--ph);
+  display: flex;
+  gap: 4rem;
+  flex-wrap: wrap;
+  border-top: 1px solid var(--border);
+  position: relative; z-index: 2;
+  animation: fadeUp 0.7s 0.75s ease both;
+}
+
+.stat { display: flex; flex-direction: column; gap: 0.25rem; }
+
+.stat-num {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.4rem;
+  font-weight: 900;
+  color: var(--gold);
+  line-height: 1;
+}
+
+.stat-lbl {
+  font-size: 0.8rem;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--t-secondary);
+}
+
+/* ── POSITIONING BAND ────────────────────────────────── */
+.band {
+  background: var(--bg-panel);
+  padding: 3.75rem var(--ph);
+  border-top: 2px solid var(--border-gold);
+  border-bottom: 1px solid var(--border);
+}
+
+.band-inner {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  gap: 5rem;
+  align-items: center;
+}
+
+.band-tagline {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(1.5rem, 2.3vw, 2.1rem);
+  font-weight: 700;
+  font-style: italic;
+  color: var(--t-heading);
+  line-height: 1.3;
+}
+
+.band-body {
+  font-size: 1.05rem;
+  line-height: 1.85;
+  color: var(--t-body);
+  border-left: 3px solid var(--border-gold);
+  padding-left: 2rem;
+}
+
+/* ── SECTION WRAPPER ─────────────────────────────────── */
+.section { padding: var(--sv) var(--ph); }
+.section-alt { background: var(--bg-panel); }
+
+/* ── DIVIDER ─────────────────────────────────────────── */
+.divider {
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(212,168,58,0.22), transparent);
+  margin: 0 var(--ph);
+}
+
+/* ── WHO WE ARE ──────────────────────────────────────── */
+.who-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5rem;
+  align-items: start;
+  margin-top: 2.75rem;
+}
+
+/* Pillars */
+.pillars { display: flex; flex-direction: column; gap: 0.55rem; margin-top: 2rem; }
+
+.pillar {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  padding: 0.9rem 1.2rem;
+  border: 1px solid var(--border);
+  background: rgba(255,255,255,0.02);
+  transition: border-color 0.22s, background 0.22s;
+}
+.pillar:hover { border-color: var(--border-gold); background: var(--gold-dim); }
+
+.pillar-n {
+  font-family: 'Playfair Display', serif;
+  font-size: 1rem;
+  font-weight: 900;
+  color: rgba(212,168,58,0.35);
+  flex-shrink: 0;
+  width: 18px;
+  padding-top: 2px;
+}
+
+.pillar-t {
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--t-body);
+  line-height: 1.5;
+}
+
+/* Fact grid */
+.fact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.25rem;
+  margin-top: 2.5rem;
+}
+
+.fact { border-top: 2px solid var(--border-gold); padding-top: 1rem; }
+
+.fact-n {
+  font-family: 'Playfair Display', serif;
+  font-size: 2rem;
+  font-weight: 900;
+  color: var(--gold);
+  line-height: 1.1;
+  margin-bottom: 0.3rem;
+}
+
+.fact-t { font-size: 0.95rem; line-height: 1.6; color: var(--t-secondary); }
+
+/* ICISI system callout */
+.sys-callout {
+  margin-top: 2rem;
+  background: var(--gold-dim);
+  border: 1px solid var(--border-gold);
+  padding: 1.75rem 2rem;
+}
+.sys-callout .eyebrow { margin-bottom: 0.65rem; }
+.sys-callout p { font-size: 1rem; line-height: 1.8; color: var(--t-body); }
+.sys-callout strong { color: var(--t-heading); font-weight: 600; }
+
+/* ── SERVICES ────────────────────────────────────────── */
+/* 2-column grid — more breathing room than 3 */
+.services-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1px;
+  background: var(--border);
+  margin-top: 2.75rem;
+}
+
+.svc-card {
+  background: var(--bg-panel);
+  padding: 2.25rem 2rem;
+  transition: background 0.22s;
+  position: relative;
+}
+.svc-card:hover { background: var(--bg-raise); }
+.svc-card::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0; height: 2px;
+  background: linear-gradient(90deg, var(--gold), transparent);
+  opacity: 0;
+  transition: opacity 0.22s;
+}
+.svc-card:hover::before { opacity: 1; }
+
+.svc-header {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  margin-bottom: 0.85rem;
+}
+
+.svc-icon { font-size: 1.6rem; flex-shrink: 0; margin-top: 0.15rem; }
+
+.svc-num {
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--ember);
+  margin-bottom: 0.35rem;
+}
+
+.svc-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--t-heading);
+  line-height: 1.25;
+}
+
+.svc-desc {
+  font-size: 1rem;
+  line-height: 1.8;
+  color: var(--t-body);
+}
+
+/* ── CASE STUDIES ────────────────────────────────────── */
+.cases-stack { display: flex; flex-direction: column; gap: 2px; margin-top: 2.75rem; }
+
+.case-card {
+  display: grid;
+  grid-template-columns: 220px 1fr;
+  border: 1px solid var(--border);
+  background: var(--bg-panel);
+  transition: border-color 0.22s;
+}
+.case-card:hover { border-color: var(--border-gold); }
+
+.case-sidebar {
+  background: var(--gold-dim);
+  border-right: 1px solid var(--border-gold);
+  padding: 2.5rem 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.75rem;
+}
+
+.case-num {
+  font-family: 'Playfair Display', serif;
+  font-size: 3.5rem;
+  font-weight: 900;
+  color: rgba(212,168,58,0.18);
+  line-height: 1;
+}
+
+.kpi-val {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--gold);
+  line-height: 1.1;
+}
+.kpi-lbl {
+  font-size: 0.9rem;
+  line-height: 1.55;
+  color: var(--t-secondary);
+  margin-top: 0.2rem;
+}
+
+.case-body { padding: 2.5rem; }
+
+.case-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.45rem;
+  font-weight: 700;
+  color: var(--t-heading);
+  line-height: 1.25;
+  margin-bottom: 0.3rem;
+}
+
+.case-sub {
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 1.25rem;
+}
+
+.case-desc {
+  font-size: 1rem;
+  line-height: 1.82;
+  color: var(--t-body);
+  margin-bottom: 1.5rem;
+}
+
+.del-tags { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 1.5rem; }
+
+.del-tag {
+  font-size: 0.82rem;
+  font-weight: 500;
+  color: var(--t-secondary);
+  border: 1px solid var(--border);
+  padding: 0.3rem 0.8rem;
+  transition: color 0.2s, border-color 0.2s;
+}
+.case-card:hover .del-tag { color: var(--t-body); border-color: rgba(255,255,255,0.15); }
+
+.case-quote {
+  border-left: 3px solid var(--border-gold);
+  padding-left: 1.25rem;
+  font-style: italic;
+  font-size: 0.98rem;
+  line-height: 1.82;
+  color: var(--t-secondary);
+}
+
+/* ── TEAM ────────────────────────────────────────────── */
+/* 3-column grid — wider cards, more readable bios */
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.25rem;
+  margin-top: 2.75rem;
+}
+
+.team-card {
+  background: var(--bg-panel);
+  border: 1px solid var(--border);
+  padding: 2rem 1.75rem;
+  display: flex;
+  flex-direction: column;
+  transition: border-color 0.22s, background 0.22s;
+}
+.team-card:hover { border-color: var(--border-gold); background: var(--bg-raise); }
+
+.team-role {
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 0.35rem;
+}
+
+.team-name {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: var(--t-heading);
+  line-height: 1.2;
+  margin-bottom: 0.25rem;
+}
+
+.team-org {
+  font-size: 0.9rem;
+  color: var(--t-secondary);
+  line-height: 1.45;
+  margin-bottom: 1rem;
+}
+
+.team-rule { height: 1px; background: var(--border); margin-bottom: 1rem; }
+
+.team-bio {
+  font-size: 0.98rem;
+  line-height: 1.78;
+  color: var(--t-body);
+  flex: 1;
+}
+
+.team-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-top: 1.1rem;
+}
+
+.team-tag {
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: var(--t-secondary);
+  border: 1px solid var(--border);
+  padding: 0.25rem 0.65rem;
+  transition: color 0.2s, border-color 0.2s;
+}
+.team-card:hover .team-tag { color: var(--t-body); border-color: rgba(255,255,255,0.14); }
+
+/* ── HOW WE WORK ─────────────────────────────────────── */
+.how-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0;
+  margin-top: 3.5rem;
+  position: relative;
+}
+
+.how-grid::before {
+  content: '';
+  position: absolute;
+  top: 27px;
+  left: calc(12.5% + 13px);
+  right: calc(12.5% + 13px);
+  height: 1px;
+  background: linear-gradient(90deg, var(--gold), rgba(212,168,58,0.15));
+}
+
+.how-step { padding: 0 1.75rem; text-align: center; }
+
+.step-n {
+  width: 54px; height: 54px;
+  border-radius: 50%;
+  background: var(--bg-panel);
+  border: 2px solid var(--gold);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Playfair Display', serif;
+  font-size: 1.3rem;
+  font-weight: 900;
+  color: var(--gold);
+  margin: 0 auto 1.5rem;
+  position: relative; z-index: 1;
+}
+
+.step-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--t-heading);
+  margin-bottom: 0.7rem;
+}
+
+.step-desc {
+  font-size: 1rem;
+  line-height: 1.75;
+  color: var(--t-body);
+}
+
+/* ── FRAMEWORK ───────────────────────────────────────── */
+.fw-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5rem;
+  align-items: center;
+  margin-top: 2.75rem;
+}
+
+.fw-list { display: flex; flex-direction: column; gap: 0.75rem; }
+
+.fw-item {
+  display: flex;
+  gap: 1.25rem;
+  align-items: flex-start;
+  padding: 1.2rem 1.5rem;
+  border: 1px solid var(--border);
+  background: rgba(255,255,255,0.02);
+  transition: border-color 0.22s, background 0.22s;
+}
+.fw-item:hover { border-color: var(--border-gold); background: var(--gold-dim); }
+
+.fw-abbr {
+  flex-shrink: 0;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--gold);
+  width: 82px;
+  padding-top: 2px;
+  line-height: 1.45;
+}
+
+.fw-text { font-size: 1rem; line-height: 1.78; color: var(--t-body); }
+
+.fw-quote {
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  font-size: 1.15rem;
+  line-height: 1.75;
+  color: var(--t-body);
+  border-left: 3px solid var(--border-gold);
+  padding-left: 2.25rem;
+}
+
+.fw-source {
+  display: block;
+  font-style: normal;
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-top: 1.5rem;
+}
+
+/* ── CTA ─────────────────────────────────────────────── */
+.cta {
+  background: var(--bg-raise);
+  padding: 6rem var(--ph);
+  text-align: center;
+  border-top: 2px solid var(--border-gold);
+}
+
+.cta .section-title { max-width: 680px; margin: 0 auto 1.2rem; }
+.cta .body-text { max-width: 60ch; margin: 0 auto 3rem; }
+
+.contact-row {
+  display: flex;
+  gap: 1.25rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.contact-card {
+  background: var(--bg-panel);
+  border: 1px solid var(--border);
+  padding: 1.75rem 2rem;
+  text-align: left;
+  min-width: 230px;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  transition: border-color 0.22s, background 0.22s;
+}
+.contact-card:hover { border-color: var(--border-gold); background: var(--gold-dim); }
+
+.cc-role {
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--gold);
+}
+
+.cc-name {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--t-heading);
+}
+
+.cc-detail { font-size: 0.92rem; color: var(--t-secondary); line-height: 1.65; }
+
+/* ── FOOTER ──────────────────────────────────────────── */
+footer {
+  background: #0a0e17;
+  padding: 4rem var(--ph);
+  display: grid;
+  grid-template-columns: 1.6fr 1fr 1fr;
+  gap: 3.5rem;
+  border-top: 1px solid var(--border);
+}
+
+.footer-brand {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: var(--t-heading);
+  margin-bottom: 0.3rem;
+}
+
+.footer-tag {
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 1rem;
+}
+
+.footer-desc { font-size: 0.92rem; line-height: 1.8; color: var(--t-muted); }
+
+footer h4 {
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--t-secondary);
+  margin-bottom: 1rem;
+  padding-bottom: 0.6rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.footer-list { display: flex; flex-direction: column; gap: 0.45rem; }
+
+.footer-list a,
+.footer-list span {
+  font-size: 0.92rem;
+  color: var(--t-muted);
+  text-decoration: none;
+  line-height: 1.5;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: color 0.2s;
+}
+.footer-list a::before { content: '—'; color: var(--gold); font-size: 0.6rem; flex-shrink: 0; }
+.footer-list span::before { content: '—'; color: var(--gold); font-size: 0.6rem; flex-shrink: 0; }
+.footer-list a:hover { color: var(--t-body); }
+
+.footer-bottom {
+  background: #070a12;
+  padding: 1.1rem var(--ph);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  border-top: 1px solid rgba(255,255,255,0.04);
+}
+.footer-bottom p { font-size: 0.8rem; color: var(--t-muted); }
+
+/* ── ANIMATIONS ──────────────────────────────────────── */
+@keyframes fadeDown {
+  from { opacity: 0; transform: translateY(-12px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(22px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.reveal {
+  opacity: 0;
+  transform: translateY(26px);
+  transition: opacity 0.72s ease, transform 0.72s ease;
+}
+.reveal.visible { opacity: 1; transform: translateY(0); }
+
+/* ── RESPONSIVE ──────────────────────────────────────── */
+@media (max-width: 1200px) {
+  :root { --ph: 3rem; }
+  .services-grid { grid-template-columns: 1fr 1fr; }
+  .team-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 900px) {
+  :root { --ph: 2rem; --sv: 4rem; }
+  .who-grid,
+  .band-inner,
+  .fw-grid { grid-template-columns: 1fr; gap: 2.5rem; }
+  .band-body {
+    border-left: none;
+    border-top: 1px solid var(--border-gold);
+    padding-left: 0;
+    padding-top: 1.5rem;
+  }
+  .how-grid { grid-template-columns: 1fr 1fr; }
+  .how-grid::before { display: none; }
+  .case-card { grid-template-columns: 1fr; }
+  .case-sidebar {
+    border-right: none;
+    border-bottom: 1px solid var(--border-gold);
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
+  footer { grid-template-columns: 1fr; gap: 2.5rem; }
+  .divider { margin: 0 2rem; }
+}
+
+@media (max-width: 640px) {
+  .services-grid,
+  .team-grid,
+  .how-grid { grid-template-columns: 1fr; }
+  .stats-bar { gap: 2rem; }
+  .fact-grid { grid-template-columns: 1fr 1fr; }
+  .contact-row { flex-direction: column; }
+  .contact-card { min-width: unset; }
+}
+</style>
+</head>
+<body>
+
+<!-- ════════════════════════ HERO ════════════════════════ -->
+<section class="hero">
+  <nav class="nav">
+    <div class="nav-brand">
+      <div class="nav-logo">IC Indigenous Solutions Inc.</div>
+      <div class="nav-url">ICISI &nbsp;·&nbsp; icindigenoussolutions.ca</div>
+    </div>
+    <div class="nav-badge">Your Nation. Your Goals. Our Expertise.</div>
+  </nav>
+
+  <div class="hero-content">
+    <div class="hero-headline-eyebrow">
+      Trusted by First Nations &nbsp;·&nbsp; Chiefs &nbsp;·&nbsp; Councils &nbsp;·&nbsp; Nation Leadership Across Canada
+    </div>
+    <h1>Governance.<br><em>Delivered.</em></h1>
+    <p class="hero-sub">
+      Your Nation has priorities. ICISI has the team, the tools, and the track record to help you execute them — in governance, housing, economic development, health, and capacity building.
+    </p>
+    <div class="hero-actions">
+      <a href="#services" class="btn btn-solid">Our Services</a>
+      <a href="#contact" class="btn btn-outline">Contact the Team</a>
+    </div>
+  </div>
+
+  <div class="stats-bar">
+    <div class="stat">
+      <div class="stat-num">32+</div>
+      <div class="stat-lbl">Years Leadership Experience</div>
+    </div>
+    <div class="stat">
+      <div class="stat-num">$6B+</div>
+      <div class="stat-lbl">Funding Arrangements Managed</div>
+    </div>
+    <div class="stat">
+      <div class="stat-num">$300M+</div>
+      <div class="stat-lbl">Capital Projects Directed</div>
+    </div>
+    <div class="stat">
+      <div class="stat-num">7+</div>
+      <div class="stat-lbl">Provinces &amp; Territories Served</div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════ POSITIONING BAND ══════════════════ -->
+<div class="band reveal">
+  <div class="band-inner">
+    <div class="band-tagline">"Where Mandate<br>Becomes Reality."</div>
+    <p class="band-body">
+      ICISI delivers integrated, Indigenous-led solutions in governance, service delivery, and capacity building. We don't just advise — we build the plans, systems, and tools that communities actually implement. We are brought in when organizations need forward movement, not just recommendations. Our model is grounded in accountability, clear communication, and structure that holds after we leave.
+    </p>
+  </div>
+</div>
+
+<!-- ════════════════════ WHO WE ARE ════════════════════ -->
+<section class="section reveal">
+  <span class="eyebrow">Who We Are</span>
+  <h2 class="section-title">Indigenous-led. <em>Implementation-focused.</em><br>Built for Nation-Building.</h2>
+
+  <div class="who-grid">
+    <div>
+      <p class="body-text">
+        ICISI is an Indigenous-controlled, Canada-wide consulting firm operating as a collective of independent senior consultants — each a proven specialist in their field. Our bench model means you get the right expertise for your specific need, always delivered under the ICISI Management System: consistent SOPs, reporting, and transparency regardless of who leads your engagement.
+      </p>
+      <p class="body-text">
+        We are Métis-led, with deep experience across First Nations governance environments. We understand that effective delivery requires trust, clear communication, and approaches that fit leadership realities — not templates imposed from outside.
+      </p>
+
+      <span class="eyebrow" style="margin-top: 2.5rem;">Our Brand Pillars</span>
+      <div class="pillars">
+        <div class="pillar"><div class="pillar-n">01</div><div class="pillar-t">Experience — Decades of senior-level, on-the-ground delivery</div></div>
+        <div class="pillar"><div class="pillar-n">02</div><div class="pillar-t">Solutions — Practical and implementable, not just advisory</div></div>
+        <div class="pillar"><div class="pillar-n">03</div><div class="pillar-t">Results — Measurable outcomes with clear KPIs and accountability</div></div>
+        <div class="pillar"><div class="pillar-n">04</div><div class="pillar-t">Integrated Services — All disciplines, one coordinated team</div></div>
+        <div class="pillar"><div class="pillar-n">05</div><div class="pillar-t">Nation-Building — Sovereignty, self-determination, lasting wealth</div></div>
+      </div>
+    </div>
+
+    <div>
+      <div class="fact-grid">
+        <div class="fact">
+          <div class="fact-n">100%</div>
+          <div class="fact-t">Success rate on contracted management capacity obligations</div>
+        </div>
+        <div class="fact">
+          <div class="fact-n">22→108</div>
+          <div class="fact-t">Staff growth led by ICISI leadership at a single client organization</div>
+        </div>
+        <div class="fact">
+          <div class="fact-n">25+</div>
+          <div class="fact-t">Years average experience per senior consultant on the team</div>
+        </div>
+        <div class="fact">
+          <div class="fact-n">Canada-wide</div>
+          <div class="fact-t">Active across MB, ON, BC, SK, AB and beyond</div>
+        </div>
+      </div>
+
+      <div class="sys-callout">
+        <span class="eyebrow">The ICISI Management System</span>
+        <p>All consultants operate under the <strong>ICISI Management System</strong> — ensuring that regardless of who leads your engagement, the deliverables, reporting, and transparency remain consistent. Senior specialist expertise without sacrificing firm-wide accountability.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ════════════════════ SERVICES ════════════════════════ -->
+<section class="section section-alt" id="services">
+  <div class="reveal">
+    <span class="eyebrow">Our Service Lines</span>
+    <h2 class="section-title">What We <em>Deliver</em></h2>
+    <p class="body-text" style="max-width: 60ch; margin-bottom: 2.75rem;">
+      Ten integrated service areas — each with defined deliverables, clear engagement structures, and a commitment to leaving your organization stronger than we found it.
+    </p>
+  </div>
+
+  <div class="services-grid reveal">
+
+    <div class="svc-card">
+      <div class="svc-num">Service 01</div>
+      <div class="svc-header">
+        <div class="svc-icon">🏛️</div>
+        <div class="svc-title">Governance &amp; Strategy</div>
+      </div>
+      <p class="svc-desc">Governance frameworks, delegation of authority, policy development, strategic planning, and organizational design. Grounded in PSAS standards, ISC requirements, and First Nations governance realities.</p>
+    </div>
+
+    <div class="svc-card">
+      <div class="svc-num">Service 02</div>
+      <div class="svc-header">
+        <div class="svc-icon">⚙️</div>
+        <div class="svc-title">Operations &amp; Program Performance</div>
+      </div>
+      <p class="svc-desc">Operational reviews, internal control design, month-end reporting discipline, workflow improvements, and program management. We reduce bottlenecks and build systems that actually get used.</p>
+    </div>
+
+    <div class="svc-card">
+      <div class="svc-num">Service 03</div>
+      <div class="svc-header">
+        <div class="svc-icon">🏗️</div>
+        <div class="svc-title">Housing &amp; Infrastructure</div>
+      </div>
+      <p class="svc-desc">CMHC program delivery (RRAP, Section 95), ISC funding applications and reporting, housing inspections, asset management, compliance frameworks, and emergency management planning for First Nations communities.</p>
+    </div>
+
+    <div class="svc-card">
+      <div class="svc-num">Service 04</div>
+      <div class="svc-header">
+        <div class="svc-icon">📈</div>
+        <div class="svc-title">Economic Development &amp; Nation Wealth</div>
+      </div>
+      <p class="svc-desc">Sovereign wealth architecture, HoldCo design, capital strategy, FNFA and bond financing, procurement mandates (5% PSIB), joint venture strategy, and emerging sectors including carbon, renewables, and real estate.</p>
+    </div>
+
+    <div class="svc-card">
+      <div class="svc-num">Service 05</div>
+      <div class="svc-header">
+        <div class="svc-icon">💰</div>
+        <div class="svc-title">Funding &amp; Proposals</div>
+      </div>
+      <p class="svc-desc">End-to-end proposal development, funding stack design, eligibility mapping, and implementation plans grounded in real execution — so approved dollars translate into visible outcomes.</p>
+    </div>
+
+    <div class="svc-card">
+      <div class="svc-num">Service 06</div>
+      <div class="svc-header">
+        <div class="svc-icon">👥</div>
+        <div class="svc-title">People &amp; Administration</div>
+      </div>
+      <p class="svc-desc">HR strategy, executive recruitment, organizational restructuring, capacity building, and workforce planning. Includes role clarity, onboarding systems, and coverage planning to reduce single points of failure.</p>
+    </div>
+
+    <div class="svc-card">
+      <div class="svc-num">Service 07</div>
+      <div class="svc-header">
+        <div class="svc-icon">🏥</div>
+        <div class="svc-title">Health Services &amp; Consulting</div>
+      </div>
+      <p class="svc-desc">Mental wellness and addictions program support, health systems planning, quality and accreditation readiness, Jordan's Principle navigation, intergovernmental engagement, and fiscally sustainable program design.</p>
+    </div>
+
+    <div class="svc-card">
+      <div class="svc-num">Service 08</div>
+      <div class="svc-header">
+        <div class="svc-icon">🤝</div>
+        <div class="svc-title">Indigenous Engagement &amp; Partnerships</div>
+      </div>
+      <p class="svc-desc">UNDRIP/FPIC engagement design, OCAP and data sovereignty frameworks, partnership brokering, culturally grounded participation models, and documentation for leadership, funders, and oversight bodies.</p>
+    </div>
+
+    <div class="svc-card">
+      <div class="svc-num">Service 09</div>
+      <div class="svc-header">
+        <div class="svc-icon">📋</div>
+        <div class="svc-title">Program &amp; Project Management</div>
+      </div>
+      <p class="svc-desc">Fractional PMO support, workplans and milestones, decision logs, risk registers, budget and funding performance tracking, procurement coordination, and full handover packages including SOPs and training notes.</p>
+    </div>
+
+    <div class="svc-card">
+      <div class="svc-num">Service 10</div>
+      <div class="svc-header">
+        <div class="svc-icon">📊</div>
+        <div class="svc-title">Income Assistance &amp; Social Services</div>
+      </div>
+      <p class="svc-desc">On-reserve eligibility and file compliance systems, rates and special needs controls, overpayment and recovery processes, fraud prevention frameworks, and audit-ready reporting aligned to ISC program requirements.</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- ══════════════════ CASE STUDIES ══════════════════════ -->
+<section class="section reveal" id="cases">
+  <span class="eyebrow">Proof of Delivery</span>
+  <h2 class="section-title">Strategy-to-Execution: <em>Case Studies</em></h2>
+  <p class="body-text" style="max-width: 60ch; margin-bottom: 2.75rem;">
+    Three anonymized, board-level proof points demonstrating ICISI's end-to-end capability. Hard metrics. Real outcomes. All client identifiers removed.
+  </p>
+
+  <div class="cases-stack">
+
+    <div class="case-card">
+      <div class="case-sidebar">
+        <div class="case-num">01</div>
+        <div>
+          <div class="kpi-val">10–15K lbs</div>
+          <div class="kpi-lbl">Annual fresh produce per unit, up from near-zero</div>
+        </div>
+        <div>
+          <div class="kpi-val">40–90%</div>
+          <div class="kpi-lbl">Reduction in water use vs. soil farming</div>
+        </div>
+        <div>
+          <div class="kpi-val">1–2 FTE</div>
+          <div class="kpi-lbl">Local employment created, up from zero</div>
+        </div>
+      </div>
+      <div class="case-body">
+        <div class="case-title">Hydroponic Food Security Model</div>
+        <div class="case-sub">Year-Round Fresh Produce &nbsp;·&nbsp; Community Infrastructure &nbsp;·&nbsp; Enterprise Controls</div>
+        <p class="case-desc">A remote Indigenous community needed year-round access to affordable fresh produce. The board's real risk was governance failure — capital purchased without an operating model and unclear accountability. ICISI delivered an end-to-end solution treating the farm as both community infrastructure and a real enterprise, pairing food outcomes with governance and controls from day one.</p>
+        <div class="del-tags">
+          <span class="del-tag">Investment-ready business model</span>
+          <span class="del-tag">Funding package</span>
+          <span class="del-tag">Implementation playbook</span>
+          <span class="del-tag">Controls &amp; reporting cockpit</span>
+          <span class="del-tag">Operator training &amp; SOPs</span>
+        </div>
+        <div class="case-quote">
+          "What ICISI brought was a disciplined pathway from idea to operations. They translated a complex set of choices into clear board decisions, and then managed the details that usually sink projects: procurement, site readiness, staffing, and reporting."
+        </div>
+      </div>
+    </div>
+
+    <div class="case-card">
+      <div class="case-sidebar">
+        <div class="case-num">02</div>
+        <div>
+          <div class="kpi-val">10–15 days</div>
+          <div class="kpi-lbl">Month-end close cycle, down from 30–60 days</div>
+        </div>
+        <div>
+          <div class="kpi-val">90–98%</div>
+          <div class="kpi-lbl">Purchase protocol compliance, up from 40–70%</div>
+        </div>
+        <div>
+          <div class="kpi-val">40–80%</div>
+          <div class="kpi-lbl">Reduction in audit adjustments and rework</div>
+        </div>
+      </div>
+      <div class="case-body">
+        <div class="case-title">Governance &amp; Financial Controls Transformation</div>
+        <div class="case-sub">Risk-Based Controls &nbsp;·&nbsp; Financial Management &nbsp;·&nbsp; Reporting Discipline</div>
+        <p class="case-desc">A mid-sized Indigenous government faced systemic operating friction: inconsistent procedures, unclear authority, unreliable financial data, and recurring audit pressure. The cost showed up as persistent "operational tax" — delayed decisions, compliance stress, and procurement inefficiency. ICISI executed a structured review and governance transformation centered on risk-based internal controls, role clarity, and repeatable monthly reporting.</p>
+        <div class="del-tags">
+          <span class="del-tag">Operational review report</span>
+          <span class="del-tag">Governance &amp; authority matrix</span>
+          <span class="del-tag">Internal control framework</span>
+          <span class="del-tag">Management reporting package</span>
+          <span class="del-tag">Capacity-build training</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="case-card">
+      <div class="case-sidebar">
+        <div class="case-num">03</div>
+        <div>
+          <div class="kpi-val">Nation-Level</div>
+          <div class="kpi-lbl">Wealth architecture built for intergenerational compounding</div>
+        </div>
+        <div>
+          <div class="kpi-val">5-Bucket</div>
+          <div class="kpi-lbl">Capital allocation system protecting assets from political disruption</div>
+        </div>
+        <div>
+          <div class="kpi-val">12 Sections</div>
+          <div class="kpi-lbl">Modular blueprint from entity design through risk realities</div>
+        </div>
+      </div>
+      <div class="case-body">
+        <div class="case-title">Economic Development &amp; Nation Wealth Strategy</div>
+        <div class="case-sub">Sovereign Wealth Architecture &nbsp;·&nbsp; Governance &nbsp;·&nbsp; Capital Strategy</div>
+        <p class="case-desc">A Nation with growing revenues lacked the structural architecture to compound — rather than consume — economic gains. ICISI designed a comprehensive Sovereign Wealth and HoldCo system incorporating entity structure, capital allocation, tax positioning (Section 87), FNFA bond financing, and governance protections. The result: a practitioner-grade blueprint taking the Nation from raw economic activity through to compounding intergenerational wealth.</p>
+        <div class="del-tags">
+          <span class="del-tag">Structural diagnostic report</span>
+          <span class="del-tag">HoldCo architecture blueprint</span>
+          <span class="del-tag">Entity incorporation package</span>
+          <span class="del-tag">Tax position paper</span>
+          <span class="del-tag">Board governance charter</span>
+          <span class="del-tag">5-bucket capital model</span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ══════════════════════ TEAM ══════════════════════════ -->
+<section class="section section-alt" id="team">
+  <div class="reveal">
+    <span class="eyebrow">Our People</span>
+    <h2 class="section-title">Experienced People. <em>Community-Understood.</em></h2>
+    <p class="body-text" style="max-width: 66ch; margin-bottom: 2.75rem;">
+      ICISI's team includes a former Chief, federal directors, a registered psychiatric nurse, a financial advisor with $6B+ managed, and housing and social services specialists — people who have lived and worked inside the systems your Nation navigates every day.
+    </p>
+  </div>
+
+  <div class="team-grid reveal">
+
+    <div class="team-card">
+      <div class="team-role">President &amp; Senior Consultant</div>
+      <div class="team-name">Drayton Mendrun</div>
+      <div class="team-org">IC Indigenous Solutions Inc. &nbsp;·&nbsp; Métis</div>
+      <div class="team-rule"></div>
+      <p class="team-bio">MBA-trained and implementation-focused, Drayton helps First Nations and Indigenous organizations turn community priorities into clear plans, practical systems, and measurable results. Known for being organized, approachable, and direct — he simplifies complexity and builds momentum across files with multiple stakeholders, tight timelines, and competing priorities.</p>
+      <div class="team-tags">
+        <span class="team-tag">Strategic Advisory</span>
+        <span class="team-tag">Change Management</span>
+        <span class="team-tag">Business Planning</span>
+        <span class="team-tag">Governance</span>
+        <span class="team-tag">Proposals</span>
+      </div>
+    </div>
+
+    <div class="team-card">
+      <div class="team-role">Vice-President</div>
+      <div class="team-name">Doug Mercer</div>
+      <div class="team-org">IC Indigenous Solutions Inc. &nbsp;·&nbsp; Sagkeeng First Nation</div>
+      <div class="team-rule"></div>
+      <p class="team-bio">32+ years of progressive Indigenous governance leadership. Former Executive Director of SERDC (8 years), overseeing $300M+ in capital projects, growing staff from 22 to 108, and achieving Accreditation Canada with excellence. Previously 20 years with Indigenous Services Canada as Director of Programs and Health Governance, managing $80M+ annual budgets. Certified First Nations Health Manager.</p>
+      <div class="team-tags">
+        <span class="team-tag">Executive Leadership</span>
+        <span class="team-tag">Health Governance</span>
+        <span class="team-tag">Federal Funding</span>
+        <span class="team-tag">CMHC Housing</span>
+        <span class="team-tag">Org Transformation</span>
+      </div>
+    </div>
+
+    <div class="team-card">
+      <div class="team-role">Senior Governance Consultant</div>
+      <div class="team-name">Vincent Tacan</div>
+      <div class="team-org">IC Indigenous Solutions Inc. &nbsp;·&nbsp; Former Chief, Sioux Valley Dakota Nation</div>
+      <div class="team-rule"></div>
+      <p class="team-bio">As a former Chief of Sioux Valley Dakota Nation, Vincent brings firsthand leadership experience from the highest level of First Nations governance. His deep understanding of community dynamics, political realities, and the challenges facing Chiefs and Councils makes him a uniquely credible advisor for Nations navigating governance transformation and Nation-to-Nation engagement.</p>
+      <div class="team-tags">
+        <span class="team-tag">Former Chief</span>
+        <span class="team-tag">Governance</span>
+        <span class="team-tag">Community Relations</span>
+        <span class="team-tag">Policy</span>
+        <span class="team-tag">Nation-to-Nation</span>
+      </div>
+    </div>
+
+    <div class="team-card">
+      <div class="team-role">Senior Consultant · Governance &amp; Finance</div>
+      <div class="team-name">Janine Marion</div>
+      <div class="team-org">IC Indigenous Solutions Inc.</div>
+      <div class="team-rule"></div>
+      <p class="team-bio">25+ years supporting Indigenous communities as a Senior Consultant with BDO Canada LLP. Led the establishment of two women's shelters in Manitoba, developed FMB certification frameworks, and built financial and HR structures for long-term community sustainability. Expertise spanning governance, financial structures, policy design, and capacity building.</p>
+      <div class="team-tags">
+        <span class="team-tag">FMB Certification</span>
+        <span class="team-tag">Financial Structures</span>
+        <span class="team-tag">Policy Development</span>
+        <span class="team-tag">HR Strategy</span>
+        <span class="team-tag">Self-Governance</span>
+      </div>
+    </div>
+
+    <div class="team-card">
+      <div class="team-role">Senior Housing Consultant</div>
+      <div class="team-name">Nathan Hall</div>
+      <div class="team-org">IC Indigenous Solutions Inc. &nbsp;·&nbsp; Sioux Valley Dakota Nation</div>
+      <div class="team-rule"></div>
+      <p class="team-bio">Extensive experience supporting First Nations communities across Manitoba in housing program delivery, infrastructure coordination, and funding applications. Specializes in CMHC programs (RRAP, Section 95) and ISC reporting. Works directly with Chiefs, Councils, Band Managers, and technical consultants to build practical systems for long-term housing sustainability.</p>
+      <div class="team-tags">
+        <span class="team-tag">CMHC Programs</span>
+        <span class="team-tag">ISC Reporting</span>
+        <span class="team-tag">Asset Management</span>
+        <span class="team-tag">Housing Policy</span>
+        <span class="team-tag">Compliance</span>
+      </div>
+    </div>
+
+    <div class="team-card">
+      <div class="team-role">Senior Income Assistance Specialist</div>
+      <div class="team-name">Robin Dodd</div>
+      <div class="team-org">IC Indigenous Solutions Inc.</div>
+      <div class="team-rule"></div>
+      <p class="team-bio">A senior specialist in on-reserve Income Assistance and Social Services, Robin brings deep expertise in eligibility and file compliance systems, rates and special needs controls, employability workflows, overpayment and recovery processes, and audit-ready reporting. Her work helps Nations build fair, consistent, and defensible social service systems that reduce compliance risk.</p>
+      <div class="team-tags">
+        <span class="team-tag">Income Assistance</span>
+        <span class="team-tag">ISC Compliance</span>
+        <span class="team-tag">Social Services</span>
+        <span class="team-tag">Audit Readiness</span>
+        <span class="team-tag">Program Management</span>
+      </div>
+    </div>
+
+    <div class="team-card">
+      <div class="team-role">HR Consultant</div>
+      <div class="team-name">Cara Leslie</div>
+      <div class="team-org">IC Indigenous Solutions Inc.</div>
+      <div class="team-rule"></div>
+      <p class="team-bio">Cara brings human resources expertise tailored to the unique needs of First Nations governments and organizations. Her work supports executive recruitment, organizational restructuring, role clarity, onboarding systems, HR policy development, and workforce planning — helping Nations build internal capacity and reduce single points of failure.</p>
+      <div class="team-tags">
+        <span class="team-tag">Executive Recruitment</span>
+        <span class="team-tag">HR Policy</span>
+        <span class="team-tag">Workforce Planning</span>
+        <span class="team-tag">Org Design</span>
+        <span class="team-tag">Capacity Building</span>
+      </div>
+    </div>
+
+    <div class="team-card">
+      <div class="team-role">Founder &amp; Advisor · Financial</div>
+      <div class="team-name">Jacques Marion</div>
+      <div class="team-org">IC Indigenous Solutions Inc.</div>
+      <div class="team-rule"></div>
+      <p class="team-bio">30+ years specializing in financial advisory and economic development for First Nations across Canada. BDO's past National Indigenous Consulting Lead and a Founder and Advisor to ICISI. Has managed in excess of $6 billion in ministerial funding arrangements. 100% success rate in contracted management capacity, debt de-escalation, and settlement across 7 provinces and 3 territories.</p>
+      <div class="team-tags">
+        <span class="team-tag">Founder &amp; Advisor</span>
+        <span class="team-tag">$6B+ Managed</span>
+        <span class="team-tag">Debt Remediation</span>
+        <span class="team-tag">ISC Reporting</span>
+        <span class="team-tag">Econ. Development</span>
+      </div>
+    </div>
+
+    <div class="team-card">
+      <div class="team-role">Principal Consultant · Health</div>
+      <div class="team-name">Sara Rommelaere, BScPN, RPN</div>
+      <div class="team-org">Sovereign Spirit First Nations Consulting &nbsp;·&nbsp; Gull Bay First Nation</div>
+      <div class="team-rule"></div>
+      <p class="team-bio">Registered Psychiatric Nurse and citizen of Gull Bay First Nation with 20+ years spanning frontline clinical practice, emergency and crisis response, systems planning, and senior-level policy and intergovernmental engagement. Highly experienced in Jordan's Principle, Treaty rights, and UNDA Action Plan navigation. Designs community-led health, mental health, and addictions initiatives.</p>
+      <div class="team-tags">
+        <span class="team-tag">Mental Health</span>
+        <span class="team-tag">Addictions</span>
+        <span class="team-tag">Jordan's Principle</span>
+        <span class="team-tag">Health Systems</span>
+        <span class="team-tag">Policy &amp; IGR</span>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ════════════════════ HOW WE WORK ═════════════════════ -->
+<section class="section reveal">
+  <span class="eyebrow">How We Work</span>
+  <h2 class="section-title">Less noise. <em>More progress.</em></h2>
+  <p class="body-text">Our engagement model is built to protect leadership time while delivering real implementation — not reports that sit on shelves.</p>
+
+  <div class="how-grid">
+    <div class="how-step">
+      <div class="step-n">1</div>
+      <div class="step-title">Diagnose &amp; Align</div>
+      <p class="step-desc">We start with a structured diagnostic — understanding your current state, priorities, and capacity constraints before proposing any solution.</p>
+    </div>
+    <div class="how-step">
+      <div class="step-n">2</div>
+      <div class="step-title">Plan &amp; Design</div>
+      <p class="step-desc">Clear workplans, milestones, and decision frameworks. We translate leadership direction into actionable plans and tools staff can use with confidence.</p>
+    </div>
+    <div class="how-step">
+      <div class="step-n">3</div>
+      <div class="step-title">Implement &amp; Track</div>
+      <p class="step-desc">Hands-on delivery with structured reporting cadence. Accountability against milestones, budget tracking, and active risk management throughout.</p>
+    </div>
+    <div class="how-step">
+      <div class="step-n">4</div>
+      <div class="step-title">Transfer &amp; Sustain</div>
+      <p class="step-desc">We leave organizations stronger, not dependent. Every engagement closes with SOPs, templates, training notes, and repeatable workplans.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════════ FRAMEWORK ═══════════════════════ -->
+<section class="section section-alt reveal">
+  <span class="eyebrow">Our Operating Framework</span>
+  <h2 class="section-title">Principled. <em>Practical.</em> Accountable.</h2>
+
+  <div class="fw-grid">
+    <div class="fw-list">
+      <div class="fw-item">
+        <div class="fw-abbr">UNDRIP &amp; FPIC</div>
+        <p class="fw-text">Early engagement, meaningful participation, documented feedback loops, and consent objectives where relevant — embedded in how we plan, not added as an afterthought.</p>
+      </div>
+      <div class="fw-item">
+        <div class="fw-abbr">OCAP®</div>
+        <p class="fw-text">Community control of information and data sovereignty. OCAP principles are referenced and applied across all engagements involving community data and records.</p>
+      </div>
+      <div class="fw-item">
+        <div class="fw-abbr">Legal Clarity</div>
+        <p class="fw-text">We support meaningful engagement. Duty to Consult is held by the Crown — we help communities navigate it, not conflate it with our advisory role.</p>
+      </div>
+      <div class="fw-item">
+        <div class="fw-abbr">ICISI System</div>
+        <p class="fw-text">All consultants operate under consistent SOPs, reporting standards, and transparency protocols — regardless of which specialist leads your engagement.</p>
+      </div>
+    </div>
+
+    <blockquote class="fw-quote">
+      "ICISI is built for Nation-Building — not just project delivery. We understand that economic growth, governance strength, and cultural integrity are not separate goals. They reinforce each other. Our work is designed to advance all three simultaneously, leaving communities with systems, structures, and people who can sustain results long after the engagement ends."
+      <span class="fw-source">— ICISI Brand Positioning, February 2026</span>
+    </blockquote>
+  </div>
+</section>
+
+<!-- ════════════════════ CTA ═════════════════════════════ -->
+<section class="cta reveal" id="contact">
+  <span class="eyebrow">Start the Conversation</span>
+  <h2 class="section-title">Your Nation's priorities deserve<br>a team that <em>gets it done.</em></h2>
+  <p class="body-text">
+    Chiefs, Councils, and Nation leadership across Canada reach out to ICISI when they need more than advice — they need results. Whether it's a governance overhaul, a housing funding application, an economic development blueprint, or day-to-day operational support, we have the specialists and the systems to deliver.
+  </p>
+
+  <div class="contact-row">
+    <a href="mailto:drayton@icindigenoussolutions.ca" class="contact-card">
+      <div class="cc-role">President &amp; Senior Consultant</div>
+      <div class="cc-name">Drayton Mendrun</div>
+      <div class="cc-detail">drayton@icindigenoussolutions.ca<br>204-451-3228</div>
+    </a>
+    <a href="mailto:Nathan@icindigenoussolutions.ca" class="contact-card">
+      <div class="cc-role">Senior Housing Consultant</div>
+      <div class="cc-name">Nathan Hall</div>
+      <div class="cc-detail">Nathan@icindigenoussolutions.ca<br>204-720-4667</div>
+    </a>
+    <a href="mailto:Jacques@icindigenoussolutions.ca" class="contact-card">
+      <div class="cc-role">Founder &amp; Financial Advisor</div>
+      <div class="cc-name">Jacques Marion</div>
+      <div class="cc-detail">Jacques@icindigenoussolutions.ca</div>
+    </a>
+    <a href="https://icindigenoussolutions.ca" class="contact-card">
+      <div class="cc-role">Website</div>
+      <div class="cc-name">icindigenoussolutions.ca</div>
+      <div class="cc-detail">Canada-wide service delivery<br>Confidential inquiries welcome</div>
+    </a>
+  </div>
+</section>
+
+<!-- ════════════════════ FOOTER ══════════════════════════ -->
+<footer>
+  <div>
+    <div class="footer-brand">IC Indigenous Solutions Inc.</div>
+    <div class="footer-tag">Integrated Solutions for Indigenous Nation-Building</div>
+    <p class="footer-desc">An Indigenous-controlled, Canada-wide consulting firm delivering governance, service delivery, and capacity building solutions. All consultants operate under the ICISI Management System — ensuring consistent, accountable delivery on every engagement.</p>
+  </div>
+
+  <div>
+    <h4>Our Service Lines</h4>
+    <div class="footer-list">
+      <span>Governance &amp; Strategy</span>
+      <span>Operations &amp; Program Performance</span>
+      <span>Housing &amp; Infrastructure</span>
+      <span>Economic Development &amp; Nation Wealth</span>
+      <span>Funding &amp; Proposals</span>
+      <span>Health Services &amp; Consulting</span>
+      <span>Program &amp; Project Management</span>
+      <span>People &amp; Administration</span>
+      <span>Indigenous Engagement</span>
+      <span>Income Assistance &amp; Social Services</span>
+    </div>
+  </div>
+
+  <div>
+    <h4>Contact</h4>
+    <div class="footer-list">
+      <a href="mailto:drayton@icindigenoussolutions.ca">drayton@icindigenoussolutions.ca</a>
+      <a href="tel:+12044513228">204-451-3228</a>
+      <a href="https://icindigenoussolutions.ca">icindigenoussolutions.ca</a>
+    </div>
+
+    <h4 style="margin-top: 2rem;">Operating Principles</h4>
+    <div class="footer-list">
+      <span>UNDRIP / FPIC</span>
+      <span>OCAP® Data Sovereignty</span>
+      <span>Seven Sacred Teachings</span>
+      <span>ICISI Management System</span>
+    </div>
+  </div>
+</footer>
+
+<div class="footer-bottom">
+  <p>© 2026 IC Indigenous Solutions Inc. &nbsp;·&nbsp; icindigenoussolutions.ca &nbsp;·&nbsp; Confidential</p>
+  <p>Canada-Wide Service Delivery &nbsp;·&nbsp; Indigenous-Controlled &amp; Led</p>
+</div>
+
+<script>
+  const io = new IntersectionObserver(
+    entries => entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); }),
+    { threshold: 0.07 }
+  );
+  document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+</script>
+</body>
+</html>
